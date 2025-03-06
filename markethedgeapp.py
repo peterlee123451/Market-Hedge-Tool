@@ -20,7 +20,7 @@ def main():
 
 
         if stock_ticker:
-            end_date = datetime.date.today()
+            end_date = datetime.date.today().date()
 
             try:
                 df = pdr.DataReader(stock_ticker, 'yahoo', start_date, end_date)
